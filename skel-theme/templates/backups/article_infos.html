@@ -1,0 +1,24 @@
+<header class="post-info">
+    <ul class="info-list">
+
+      {% if article.authors %}
+      <li class="info-item">
+        <div class="author">
+	  {% for author in article.authors %}
+	  <a class="info-link" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+	  {% endfor %}
+  	</div><!-Author ->
+      </li>
+      {% endif %}
+
+      {% set timestamp = article.date.replace(tzinfo=None) - EPOCH %}
+      <li class="info-item">
+      <span class="info-pub" title="{{ timestamp.total_seconds() }}"> {{ article.locale_date }} </span>
+      </li><!-Date->
+
+      <li class="info-item">
+        <a class="info-link" href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+	</li><!-Category->
+
+    </ul> 
+</header>

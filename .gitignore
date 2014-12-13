@@ -1,3 +1,4 @@
 VIRTUAL/
 output/
 *.pyc
+*.swp

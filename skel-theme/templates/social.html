@@ -1,0 +1,24 @@
+<div class="row footer">
+{% for site, username in SOCIAL %}
+	{% if site == 'twitter' %}
+	<div class="three columns center">
+	  <a href="https://twitter.com/{{ username }}" target="_blank"><i class="icon ion-social-twitter"></i></a>
+	</div>
+	{% endif %}
+	{% if site == 'instagram' %}
+	<div class="three columns center">
+	  <a href="http://instagram.com/{{ username }}" target="_blank"><i class="icon ion-social-instagram"></i></a>
+	</div>
+	{% endif %}
+	{% if site == 'facebook' %}
+	<div class="three columns center">
+	  <a href="https://www.facebook.com/{{ username }}" target="_blank"><i class="icon ion-social-facebook"></i></a>
+	</div>
+	{% endif %}
+	{% if site == 'github' %}
+	<div class="three columns center">
+	  <a href="https://github.com/{{ username }}" target="_blank"><i class="icon ion-social-github"></i></a>
+	</div>
+	{% endif %}
+{% endfor %}
+</div>

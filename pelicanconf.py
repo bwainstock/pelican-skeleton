@@ -29,8 +29,10 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('twitter', 'barrywainstock'),
+          ('instagram', 'bwainstock'),
+          ('facebook', 'barrywainstock'),
+          ('github', 'bwainstock'),)
 
 DEFAULT_PAGINATION = 5
 
@@ -46,3 +48,4 @@ YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%b}/index.html'
 
 DEFAULT_DATE_FORMAT = '%a %B %d, %Y'
+GOOGLE_ANALYTICS = 'UA-56109557-2'

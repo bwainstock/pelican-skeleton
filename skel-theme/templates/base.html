@@ -21,6 +21,7 @@
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/normalize.css">
         <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/skeleton.css">
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css">
         <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/skel.css">
        
         <!-- Favicon
@@ -63,13 +64,14 @@
             {% block content %}
             {% endblock %}
           </div>
+	  {% include 'social.html' %}
         </div><!-- container -->
-        
-{% include 'analytics.html' %}
-{% include 'disqus_script.html' %}
 
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        
+  {% include 'analytics.html' %}
+  {% include 'disqus_script.html' %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/instafeed.min.js"></script>
   <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.mThumbnailScroller.min.js"></script>

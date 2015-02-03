@@ -6,9 +6,9 @@ import datetime
 EPOCH = datetime.datetime.utcfromtimestamp(0)
 AUTHOR = u'Barry Wainstock'
 SITENAME = u'Barry Hikes The PCT'
-#SITEURL = ''
-SITEURL = 'http://tigren.duckdns.org/pel-skel'
-THEME = "./skel-theme"
+SITEURL = 'http://localhost:8000'
+#THEME = "./pelican-themes/skel-theme"
+THEME = './pelican-themes/pelican-svbhack'
 PATH = 'content'
 
 TIMEZONE = 'America/Los_Angeles'
@@ -23,10 +23,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('Map', '#'),)
 
 # Social widget
 SOCIAL = (('twitter', 'barrywainstock'),
@@ -49,3 +46,7 @@ MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%b}/index.html'
 
 DEFAULT_DATE_FORMAT = '%a %B %d, %Y'
 GOOGLE_ANALYTICS = 'UA-56109557-2'
+
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = ['pelican_dynamic']
+USER_LOGO_URL = SITEURL + '/images/logo.jpg'

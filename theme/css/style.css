@@ -55,7 +55,7 @@ aside div#user_meta ul li a {
   color: #999999;
 }
 aside div#user_meta .social-icons {
-  text-align: justify;
+  text-align: center;
 }
 aside div#user_meta .social-icons a {
   display: inline-block;
@@ -178,4 +178,12 @@ main div#ending_message {
   main header {
     border-top: 0;
   }
+  aside div#user_meta .social-icons {
+  text-align: right;
+  }
+}
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  font-weight: 900;
 }

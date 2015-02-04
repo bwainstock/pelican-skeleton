@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css">
   <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/pygments.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|PT+Mono">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:900,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   <meta charset="utf-8" />
@@ -48,11 +49,16 @@
         {% if USER_LOGO_URL %}
         <img id="logo" src="{{ USER_LOGO_URL }}" alt="logo">
         {% else %}
-        <img id="logo" src="{{ SITEURL }}/theme/images/logo.png" alt="logo">
+        <img id="logo" src="{{ SITEURL }}/theme/images/logo.jpg" alt="logo">
         {% endif %}
       </a>
       <h3><a href="{{ SITEURL }}">{{ AUTHOR }}</a></h3>
       <p>{{ TAGLINE }}</p>
+      <div class="social-icons">
+        {% for name, link in SOCIAL %}
+        <a href="{{ link }}" target="_blank"><i class="fa fa-{{ name }} fa-lg"></i></a>
+        {% endfor %}
+      </div>
       <ul>
         {% for title, link in MENUITEMS %}
         <li><a href="{{ link }}">{{ title }}</a></li>
@@ -64,16 +70,11 @@
         <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
         {% endfor %}
       </ul>
-        <div class="social-icons">
-          {% for name, link in SOCIAL %}
-          <a href="{{ link }}" target="_blank"><i class="fa fa-{{ name }} fa-lg"></i></a>
-          {% endfor %}
-        </div>
     </div>
   </aside>
 
   <main>
-    <header>
+    <!-- <header>
       <p>
       <a href="{{ SITEURL }}">Index</a> &brvbar; <a href="{{ SITEURL }}/archives.html">Archives</a>
       {% if FEED_ALL_ATOM %}
@@ -85,7 +86,7 @@
       {% block header %}
       {% endblock header %}
       </p>
-    </header>
+    </header> -->
 
     {% block content %}
     {% endblock %}

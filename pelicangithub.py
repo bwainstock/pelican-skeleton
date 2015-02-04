@@ -6,8 +6,8 @@ import datetime
 EPOCH = datetime.datetime.utcfromtimestamp(0)
 AUTHOR = u'Barry Wainstock'
 SITENAME = u'Barry Hikes The PCT'
+SITEURL = 'http://bwainstock.github.io/pelican-skeleton/'
 TAGLINE = u'This is a journey from Mexico to Canada on my feet.'
-SITEURL = 'http://localhost:8001'
 #THEME = "./pelican-themes/skel-theme"
 THEME = './pelican-themes/pelican-svbhack'
 PATH = 'content'
@@ -24,7 +24,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-#LINKS = (('Map', '#'),)
+LINKS = (('Map', '#'),)
 
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/barrywainstock'),
@@ -37,9 +37,9 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-#MENUITEMS =(('Gear', 'gear.html'),
-#         ('Map', 'map.html'),
-#         ('About', 'about.html'),)
+# MENUITEMS =(('Gear', 'gear.html'),
+#          ('Map', 'map.html'),
+#          ('About', 'about.html'),)
          
 DISPLAY_CATEGORIES_ON_MENU = False
 YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'

@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block head %}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:image" content="route.png" />
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+  <style>
+    html, body, #map { margin: 0; height: 500px; background: #fff; }
+    .leaflet-marker-live {
+      -webkit-animation: pulse 2s ease-out;
+      animation: pulse 2s ease-out;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+    }
+    @-webkit-keyframes pulse {
+      from { stroke-width: 15; stroke-opacity: 1; }
+      to { stroke-width: 50; stroke-opacity: 0; }
+    }
+    @keyframes pulse {
+      from { stroke-width: 15; stroke-opacity: 1; }
+      to { stroke-width: 50; stroke-opacity: 0; }
+    }
+  </style>
+{% endblock %}
+
+{% block title %}&ndash; {{ page.title }}{% endblock %}
+
+{% block content %}
+<article>
+  <div class="article_title">
+    <h3><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></h3>
+  </div>
+  <div class="article_text">
+    {{ page.content }}
+  </div>
+  <div class="article_meta">
+    <p>Updated on: {{ page.locale_date }}</p>
+  </div>
+</article>
+
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  <script src="{{ SITEURL }}/theme/js/reqwest.min.js"></script>
+  <script src="{{ SITEURL }}/theme/js/Leaflet.MakiMarkers.js"></script>
+  <script src="{{ SITEURL }}/theme/js/Leaflet.SpotTracker.js"></script>
+  <script>
+  var feed = decodeURI((RegExp('feed=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]);
+  var map = L.map('map').setView([45.5, -122.4], 7);
+    
+  L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png', {
+  }).addTo(map);
+  L.spotTracker(feed, {
+    api: 'http://bwainstock.cartodb.com/api/v2/sql',
+    url: "{api}?q=SELECT * FROM test ORDER BY unixtime",
+    liveUrl: "{api}?q=SELECT * FROM pct_spot WHERE unixtime > {timestamp} ORDER BY unixtime",
+    OK: {
+      icon: L.MakiMarkers.icon({ icon: 'building',  color: '#145291', size: 'm' }),
+      title: 'Hytte'
+    },
+    CUSTOM: {
+      icon: L.MakiMarkers.icon({ icon: 'campsite', color: '#145291', size: 'm' }),
+      title: 'Telt'
+    },
+    onClick: function (evt) {
+      var message = evt.message;
+      evt.layer.bindPopup(getTime(message.unixtime)).openPopup();
+    },
+    show: {
+      'UNLIMITED-TRACK': 10,
+      'OK': 10,
+      'CUSTOM': 10
+    }
+  }).addTo(map);
+  function getPlace (message) {
+    if (message.placename) {
+      return L.Util.template('<p><strong>{placename}</strong><br>{terrain} {altitude} moh.</p>', message);
+    }
+    return '';
+  }
+  function getTime (timestamp) {
+    var t = new Date(timestamp * 1000);
+    return L.Util.template('<p>{month} {date}, {year} {hours}:{minutes}</p>', {
+      date: t.getDate(),
+      month: ['January','February','March','April','May','June','July','August','September','October','November','December'][t.getMonth()],
+      year: t.getFullYear(),
+      hours: t.getHours(),
+      minutes: ('0' + t.getMinutes()).slice(-2)
+    });
+  }
+  function getWeather (message) {
+    if (message.weather_symbol) {
+      console.log(message.weather_symbol);
+      return L.Util.template('<p><img src="http://api.yr.no/weatherapi/weathericon/1.1/?symbol={weather_symbol};content_type=image/png" width="38" height="38" style="float:left;margin:-5px 5px 10px -5px;">{temperature}°C - {precipitation} mm<br>{wind},<br>{wind_speed} m/s fra {direction}</p><p>Værdata fra <a href="http://api.yr.no">api.yr.no</a></p>', L.extend(message, {
+          direction: { 
+            'N':  'nord', 
+            'NE': 'nordøst', 
+            'E':  'øst', 
+            'SE': 'sørøst',
+            'S':  'sør', 
+            'SW': 'sørvest',
+            'W':  'vest',
+            'NW': 'nordvest' 
+          }[message.wind_direction]
+        }));
+    }
+    return '';
+  }
+  </script>
+
+{% endblock %}

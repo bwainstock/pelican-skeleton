@@ -13,4 +13,16 @@ TODO:
 	* Technologies used
 - Change font and size for titles and bodies
 	* Roboto is nice, look through google fonts
-	* h3 added to style.css (TAKE A LOOK THERE)
+
+Style:
+---
+- Switched to Skeleton CSS framework
+- Look at skeleton.css for style changes
+	- Fonts still need work
+	- Posts layout
+		- 	Date, pictures, text, layout
+    - 	Sidebar
+    - 	Header
+    - 	Footer
+    - 	Scroll
+    - 	GEAR

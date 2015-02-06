@@ -410,10 +410,15 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+  .container {
+    padding: 24px 0;
+  }
+}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+}
 
 /* Larger than tablet */
 @media (min-width: 750px) {}
@@ -424,7 +429,25 @@ there.
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
 
+/* Custom Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 img {
   max-width: 100%;
   box-sizing: border-box;
+}
+
+/* Header */
+
+header.header {
+  height: 206px;
+}
+
+img.header-img {
+  height: 206px;
+  width: 100%
+}
+
+#ending-message p {
+  text-align: right;
+  padding-top: 24px;
 }

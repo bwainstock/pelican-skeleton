@@ -442,7 +442,7 @@ header.header {
   height: 206px;
 }
 
-img.header-img {
+img#header-img {
   height: 206px;
   width: 100%
 }

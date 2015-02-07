@@ -406,10 +406,6 @@ there.
 /* Larger than mobile */
 @media (min-width: 400px) {
   
-  .container {
-    padding: 24px 0;
-  }
-  
   aside .instagram-widget {
     display: block;
   }
@@ -452,7 +448,7 @@ img {
 
 nav {
   text-align: center;
-  padding-bottom: 48px;
+  padding: 24px 0;
 }
 
 nav h2.nav-item {

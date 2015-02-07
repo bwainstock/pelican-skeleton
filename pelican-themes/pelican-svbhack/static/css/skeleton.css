@@ -411,13 +411,20 @@ there.
 
 /* Larger than mobile */
 @media (min-width: 400px) {
+  
   .container {
     padding: 24px 0;
   }
+  
+  aside .instagram-widget {
+    display: block;
+  }
+
 }
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
+
 }
 
 /* Larger than tablet */
@@ -470,4 +477,9 @@ img#header-img {
 .social-icons a:link {
     display: block;
     padding: 1em 0;
+}
+
+/* Hide instagram widget on mobile */
+.instagram-widget {
+  display: none;
 }

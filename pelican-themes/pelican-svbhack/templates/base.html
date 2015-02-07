@@ -15,6 +15,7 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 
@@ -27,6 +28,12 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
   
+  <!-- RSS Feed
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  {% if FEED_ALL_RSS %}
+  <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS" />
+  {% endif %}
+
   {% block head %}
   {% endblock %}
 
@@ -38,13 +45,13 @@
 </head>
 <body>
 
+  <header class="header">
+   <img id="header-img" src="{{ HEADER_URL }}" > 
+  </header>
+
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-
-    <header class="row">
-      
-    </header>
 
     <nav class="row">
 <!--       <ul>
@@ -84,7 +91,7 @@
           <p>{{ TAGLINE }}</p>
           <div class="social-icons">
             {% for name, link in SOCIAL %}
-            <a href="{{ link }}" target="_blank"><i class="fa fa-{{ name }} fa-lg"></i></a>
+            <a class="social-icon" href="{{ link }}" target="_blank"><i class="fa fa-{{ name }} fa-lg"></i></a>
             {% endfor %}
           </div>
         </div>
@@ -102,8 +109,8 @@
       {% block footer %}
       {% endblock %}
 
-        <div id="ending_message">
-        <p>&copy; {{ AUTHOR }}. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Theme by Giulio Fidente on <a href="https://github.com/gfidente/pelican-svbhack" target="_blank">github</a>. {% if INTERNET_DEFENSE_LEAGUE %}Member of the <a href="http://internetdefenseleague.org">Internet Defense League</a>{% endif %}.</p>
+        <div id="ending-message">
+        <p>&copy; {{ AUTHOR }}. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Design based on <a href="https://getskeleton.com" target="_blank">Skeleton CSS Framework</a>. {% if INTERNET_DEFENSE_LEAGUE %}Member of the <a href="http://internetdefenseleague.org">Internet Defense League</a>{% endif %}.</p>
         </div>
 
     </footer>

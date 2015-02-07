@@ -7,7 +7,7 @@ EPOCH = datetime.datetime.utcfromtimestamp(0)
 AUTHOR = u'Barry Wainstock'
 SITENAME = u'Barry Hikes The PCT'
 TAGLINE = u'This is a journey from Mexico to Canada on my feet.'
-SITEURL = 'http://localhost:8001'
+SITEURL = 'http://localhost:8000'
 #THEME = "./pelican-themes/skel-theme"
 THEME = './pelican-themes/pelican-svbhack'
 PATH = 'content'
@@ -32,7 +32,7 @@ SOCIAL = (('twitter', 'https://twitter.com/barrywainstock'),
           ('facebook', 'https://www.facebook.com/barrywainstock'),
           ('github', 'https://github.com/bwainstock/'),)
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
@@ -50,5 +50,6 @@ GOOGLE_ANALYTICS = 'UA-56109557-2'
 
 PLUGIN_PATHS = ['pelican-plugins']
 #PLUGINS = ['pelican_dynamic']
+HEADER_URL = SITEURL + '/images/header.jpg'
 USER_LOGO_URL = SITEURL + '/images/logo.jpg'
 DISQUS_SITENAME = 'jbredbook'

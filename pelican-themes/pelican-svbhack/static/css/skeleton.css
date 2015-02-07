@@ -451,3 +451,23 @@ img#header-img {
   text-align: right;
   padding-top: 24px;
 }
+
+/* Side Bar */
+
+/* Social Icon Spacing */
+
+.social-icons {
+    text-align: justify;
+}
+.social-icons:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+.social-icons div {
+    display: inline-block;
+}
+.social-icons a:link {
+    display: block;
+    padding: 1em 0;
+}

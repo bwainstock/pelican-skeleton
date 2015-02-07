@@ -91,7 +91,9 @@
           <p>{{ TAGLINE }}</p>
           <div class="social-icons">
             {% for name, link in SOCIAL %}
-            <a class="social-icon" href="{{ link }}" target="_blank"><i class="fa fa-{{ name }} fa-lg"></i></a>
+            <div class="social-icon">
+              <a href="{{ link }}" target="_blank"><i class="fa fa-{{ name }} fa-lg"></i></a>
+            </div>
             {% endfor %}
           </div>
         </div>

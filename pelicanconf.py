@@ -37,7 +37,7 @@ DEFAULT_PAGINATION = 5
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-#MENUITEMS =(('Gear', 'gear.html'),
+MENUITEMS =(('Home', SITEURL),)
 #         ('Map', 'map.html'),
 #         ('About', 'about.html'),)
          

@@ -66,10 +66,10 @@
         {% endfor %}
       </ul> -->
         {% for title, link in MENUITEMS %}
-        <h2><a href="{{ link }}">{{ title }}</a></h2>
+        <h2 class="nav-item"><a href="{{ link }}">{{ title }}</a></h2>
         {% endfor %}
         {% if DISPLAY_PAGES_ON_MENU %}{% for p in pages %}
-        <h2 class="nav-page"><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></h2>
+        <h2 class="nav-item"><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></h2>
         {% endfor %}{% endif %}
         {% for name, link in LINKS %}
         <a href="{{ link }}" target="_blank">{{ name }}</a>
@@ -99,21 +99,21 @@
         </div>
         <div class="instagram-widget">
           <script src="http://snapwidget.com/js/snapwidget.js"></script>
-          <iframe src="http://snapwidget.com/in/?u=YndhaW5zdG9ja3xpbnwxMjV8Mnw0fHx5ZXN8NXxub25lfG9uU3RhcnR8eWVzfHllcw==&ve=060215" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
+          <iframe src="http://snapwidget.com/in/?u=YndhaW5zdG9ja3xpbnwxMjV8MnwzfHx5ZXN8NXxub25lfG9uU3RhcnR8bm98eWVz&ve=060215" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
         </div>
       </aside>
       
       <main class="nine columns">
         {% block content %}
         {% endblock %}
+      
+        {% block footer %}
+        {% endblock %}
       </main>
 
     </div><!-- Main content -->
 
     <footer class="row">
-      
-      {% block footer %}
-      {% endblock %}
 
         <div id="ending-message">
         <p>&copy; {{ AUTHOR }}. Built using <a href="http://getpelican.com" target="_blank">Pelican</a>. Design based on <a href="https://getskeleton.com" target="_blank">Skeleton CSS Framework</a>. {% if INTERNET_DEFENSE_LEAGUE %}Member of the <a href="http://internetdefenseleague.org">Internet Defense League</a>{% endif %}.</p>

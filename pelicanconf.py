@@ -53,3 +53,6 @@ PLUGIN_PATHS = ['pelican-plugins']
 HEADER_URL = SITEURL + '/images/header_logo.jpg'
 USER_LOGO_URL = SITEURL + '/images/logo.jpg'
 DISQUS_SITENAME = 'jbredbook'
+
+INSTAGRAM_ID = 361018940
+INSTAGRAM_TOKEN = '361018940.467ede5.ab481cfcaafd4454a1ea333429e3d3c7'

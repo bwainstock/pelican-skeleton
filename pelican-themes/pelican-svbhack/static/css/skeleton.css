@@ -46,7 +46,7 @@
 @media (min-width: 400px) {
   .container {
     width: 85%;
-    padding: 0; }
+    padding: 42px 0; }
 }
 
 /* For devices larger than 550px */
@@ -449,6 +449,9 @@ img {
 nav {
   text-align: center;
   padding: 24px 0;
+  margin-bottom: 24px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
 }
 
 nav h2.nav-item {
@@ -458,13 +461,14 @@ nav h2.nav-item {
 
 /* Header */
 
-header.header {
+/*header.header {
   height: 206px;
+}*/
+.header-logo {
+  text-align: center;
 }
-
 img#header-img {
-  height: 206px;
-  width: 100%
+  height: 50px;
 }
 
 #ending-message p {
@@ -474,6 +478,13 @@ img#header-img {
 
 /* Side Bar */
 
+#logo {
+  display: block;
+}
+
+.sidebar-item {
+  margin-bottom: 24px;
+}
 /* Social Icon Spacing */
 
 .social-icons {
@@ -499,6 +510,6 @@ img#header-img {
 
 /* Page styles */
 
-.page {
+/*.page {
   padding-top: 66px;
-}
+}*/

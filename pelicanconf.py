@@ -50,6 +50,6 @@ GOOGLE_ANALYTICS = 'UA-56109557-2'
 
 PLUGIN_PATHS = ['pelican-plugins']
 #PLUGINS = ['pelican_dynamic']
-HEADER_URL = SITEURL + '/images/header.jpg'
+HEADER_URL = SITEURL + '/images/header_logo.jpg'
 USER_LOGO_URL = SITEURL + '/images/logo.jpg'
 DISQUS_SITENAME = 'jbredbook'

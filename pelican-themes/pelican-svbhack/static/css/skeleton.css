@@ -406,7 +406,7 @@ there.
 /* Larger than mobile */
 @media (min-width: 400px) {
   
-  aside .instagram-widget {
+  aside #instafeed {
     display: block;
   }
 
@@ -504,7 +504,7 @@ img#header-img {
 }
 
 /* Hide instagram widget on mobile */
-.instagram-widget {
+#instafeed {
   display: none;
 }
 
@@ -513,3 +513,13 @@ img#header-img {
 /*.page {
   padding-top: 66px;
 }*/
+
+/* InstafeedJS */
+
+.insta-grid {
+  width: 50%;
+  display: inline-block;
+}
+.insta-grid img {
+  padding: 0px 3px;
+}

@@ -83,10 +83,11 @@
               <a href="https://github.com/bwainstock/" target="_blank"><i class="fa fa-github fa-lg"></i></a>
             </div>
           </div>
-          <div class="instagram-widget sidebar-item">
+<!--           <div class="instagram-widget sidebar-item">
             <script src="http://snapwidget.com/js/snapwidget.js"></script>
             <iframe src="http://snapwidget.com/in/?u=YndhaW5zdG9ja3xpbnwxMjV8MnwzfHx5ZXN8NXxub25lfG9uU3RhcnR8bm98eWVz&ve=060215" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
-          </div>
+          </div> -->
+          <div id="instafeed"></div>
         </div>
       </aside>
       <!-- <div class="one column" style="height: 100px;"></div> -->
@@ -116,7 +117,19 @@
     </footer>
 
   </div>
+  <script type="text/javascript" src="/pelican-skeleton/theme/js/instafeed.min.js"></script>  
 
+  <script type="text/javascript">
+    var userFeed = new Instafeed({
+        get: 'user',
+        sortBy: 'most-recent',
+        limit: 8,
+        userId: 361018940,
+        accessToken: '361018940.467ede5.ab481cfcaafd4454a1ea333429e3d3c7',
+        template: '<div class="insta-grid"><a href="{{link}}" target="_blank"><img src="{{image}}" /></a></div>'
+    });
+    userFeed.run();
+  </script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

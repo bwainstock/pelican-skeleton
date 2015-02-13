@@ -94,11 +94,16 @@
             <script src="http://snapwidget.com/js/snapwidget.js"></script>
             <iframe src="http://snapwidget.com/in/?u=YndhaW5zdG9ja3xpbnwxMjV8MnwzfHx5ZXN8NXxub25lfG9uU3RhcnR8bm98eWVz&ve=060215" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
           </div> -->
-          <div id="instafeed"></div>
+          <div id="instafeed" class="sidebar-item"></div>
+          {% if DISQUS_SITENAME %}
+          <div id="discus-comments" class="sidebar-item">
+            {% include "modules/discus_top_comments.html" %}
+          </div>
+          {% endif %}
         </div>
       </aside>
       <!-- <div class="one column" style="height: 100px;"></div> -->
-      <main class="eight columns u-pull-right">
+      <main class="nine columns u-pull-right">
         {% block content %}
         {% endblock %}
       

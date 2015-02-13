@@ -27,3 +27,8 @@ DELETE_OUTPUT_DIRECTORY = True
 
 DISQUS_SITENAME = "jbredbook"
 GOOGLE_ANALYTICS = "UA-56109557-2"
+
+SOCIAL = (('twitter', 'https://twitter.com/barrywainstock'),
+          ('instagram', 'https://instagram.com/bwainstock'),
+          ('facebook', 'https://www.facebook.com/barrywainstock'),
+          ('rss', SITEURL + FEED_ALL_RSS,),)

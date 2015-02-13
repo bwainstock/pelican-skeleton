@@ -428,6 +428,7 @@ there.
 
 /* Custom Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– 
+- Main
 - Nav Bar
 - Header
 - Side Bar
@@ -435,6 +436,9 @@ there.
   - Instagram Widget
 - Pages
 */
+.columns {
+  padding: 18px;
+}
 
 p {
   margin-top: 0; }

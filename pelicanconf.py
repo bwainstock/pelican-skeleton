@@ -29,8 +29,8 @@ AUTHOR_FEED_RSS = None
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/barrywainstock'),
           ('instagram', 'https://instagram.com/bwainstock'),
-          ('facebook', 'https://www.facebook.com/barrywainstock'),
-          ('github', 'https://github.com/bwainstock/'),)
+          ('facebook', 'https://www.facebook.com/barrywainstock'),)
+#          ('github', 'https://github.com/bwainstock/'),)
 
 DEFAULT_PAGINATION = 5
 

@@ -70,6 +70,15 @@
 
     <div class="row content">
       
+      <!-- <div class="one column" style="height: 100px;"></div> -->
+      <main class="nine columns">
+        {% block content %}
+        {% endblock %}
+      
+        {% block footer %}
+        {% endblock %}
+      </main>
+
       <aside class="three columns">
           <div class="sidebar-item" style="display: none">
             <a href="{{ SITEURL }}">
@@ -103,15 +112,6 @@
           <div id="instafeed" class="sidebar-item"></div>
           </div>
       </aside>
-      <!-- <div class="one column" style="height: 100px;"></div> -->
-      <main class="nine columns">
-        {% block content %}
-        {% endblock %}
-      
-        {% block footer %}
-        {% endblock %}
-      </main>
-
     </div><!-- Main content -->
 
     <footer class="row">

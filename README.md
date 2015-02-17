@@ -1,6 +1,11 @@
 Pelican-Skeleton
 ================
 
+CHANGELOG:
+---
+- 021615
+    - Switched column order
+
 TODO:
 -----
 - Figure out instagram images

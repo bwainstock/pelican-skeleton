@@ -26,3 +26,8 @@ Style:
     - 	Footer
     - 	Scroll
     - 	GEAR
+
+Sidebar:
+---
+- Trail shield with mile number in middle
+- FontAwesome font for gear/other posts

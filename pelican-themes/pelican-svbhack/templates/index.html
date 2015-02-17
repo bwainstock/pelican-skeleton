@@ -10,11 +10,11 @@
           <h6>{{ article.date.strftime('%m-%d-%Y') }}</h6>
       </div>
   </div>
-  <div class="article_text">
-    {{ article.summary }}
-  </div>
   <div class="article_img">
       <img src="{{ article.header }}">
+  </div>
+  <div class="article_text">
+    {{ article.summary }}
   </div>
 </article>
 <hr />

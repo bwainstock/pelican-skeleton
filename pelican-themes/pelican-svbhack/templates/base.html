@@ -71,8 +71,7 @@
     <div class="row content">
       
       <aside class="three columns">
-        <div id="user_meta">
-          <div class="sidebar-item">
+          <div class="sidebar-item" style="display: none">
             <a href="{{ SITEURL }}">
               {% if USER_LOGO_URL %}
               <img id="logo" src="{{ USER_LOGO_URL }}" alt="logo">
@@ -83,6 +82,17 @@
           </div>
           <h3 class="sidebar-item"><a href="{{ SITEURL }}">{{ AUTHOR }}</a></h3>
           <p class="sidebar-item">{{ TAGLINE }}</p>
+          <div id="user_meta">
+          {% if DISQUS_SITENAME %}
+          <div id="discus-comments" class="sidebar-item">
+            <strong><u>Recent Comments</u></strong>
+            {% include "modules/discus_top_comments.html" %}
+          </div>
+          {% endif %}
+          <strong><u>Latest Posts</u></strong>
+          <div id="last-posts" class="sidebar-item">
+            {% include "modules/last_posts.html" %}
+          </div>
           <div class="social-icons sidebar-item">
             {% for name, link in SOCIAL %}
             <div class="social-icon">
@@ -90,20 +100,11 @@
             </div>
             {% endfor %}
           </div>
-<!--           <div class="instagram-widget sidebar-item">
-            <script src="http://snapwidget.com/js/snapwidget.js"></script>
-            <iframe src="http://snapwidget.com/in/?u=YndhaW5zdG9ja3xpbnwxMjV8MnwzfHx5ZXN8NXxub25lfG9uU3RhcnR8bm98eWVz&ve=060215" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
-          </div> -->
           <div id="instafeed" class="sidebar-item"></div>
-          {% if DISQUS_SITENAME %}
-          <div id="discus-comments" class="sidebar-item">
-            {% include "modules/discus_top_comments.html" %}
           </div>
-          {% endif %}
-        </div>
       </aside>
       <!-- <div class="one column" style="height: 100px;"></div> -->
-      <main class="nine columns u-pull-right">
+      <main class="nine columns">
         {% block content %}
         {% endblock %}
       

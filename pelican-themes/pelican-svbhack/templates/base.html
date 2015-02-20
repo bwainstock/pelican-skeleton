@@ -16,6 +16,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 
@@ -94,13 +95,19 @@
           <div id="user_meta">
           {% if DISQUS_SITENAME %}
           <div id="discus-comments" class="sidebar-item">
-            <strong><u>Recent Comments</u></strong>
+            <div class="sidebar-title">
+              <h6><u>Recent Comments</u></h6>
+            </div>
             {% include "modules/discus_top_comments.html" %}
           </div>
           {% endif %}
-          <strong><u>Latest Posts</u></strong>
-          <div id="last-posts" class="sidebar-item">
+          <div id="latest-posts" class="sidebar-item">
+            <div class="sidebar-title">
+              <h6><u>Latest Posts</u></h6>
+            </div>
             {% include "modules/last_posts.html" %}
+          </div>
+          <div id="instafeed" class="sidebar-item"></div>
           </div>
           <div class="social-icons sidebar-item">
             {% for name, link in SOCIAL %}
@@ -108,8 +115,6 @@
               <a href="{{ link }}" target="_blank"><i class="fa fa-{{ name }} fa-lg"></i></a>
             </div>
             {% endfor %}
-          </div>
-          <div id="instafeed" class="sidebar-item"></div>
           </div>
       </aside>
     </div><!-- Main content -->

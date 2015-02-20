@@ -481,6 +481,15 @@ img#header-img {
 }
 
 /* Side Bar */
+.sidebar-title {
+  text-align: center;
+  font-weight: 700;
+  /*font-family: "Roboto Condensed", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+}
+
+.sidebar-title h6 {
+  font-weight: bold;
+}
 
 #logo {
   display: block;

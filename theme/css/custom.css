@@ -48,3 +48,28 @@ div .highlight, pre, span {
   color: #fff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, .3);
 }
+
+/* Gear List */
+
+.lpListName {
+  text-align: center;
+  padding-bottom: 14px;
+}
+
+@media only screen and (max-width:1023px) {
+  .lpAlignRight {
+    display: none;
+  }
+
+  .lpAlignLeft {
+    margin: 0 auto;
+  }
+
+  .lpList > .lpHalf {
+    float: none;
+  }
+
+  .lpTable {
+    margin: 0 auto;
+  }
+}

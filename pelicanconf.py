@@ -9,8 +9,8 @@ SITENAME = u'Barry Hikes The PCT'
 TAGLINE = u'This is a journey from Mexico to Canada on my feet.'
 SITEURL = 'http://localhost:8000'
 #SITEURL = 'http://tigren.duckdns.org:8001'
-#THEME = "./pelican-themes/skel-theme"
-THEME = './pelican-themes/pelican-svbhack'
+#THEME = './pelican-themes/pelican-svbhack'
+THEME = './pelican-themes/pelicanium'
 PATH = 'content'
 
 TIMEZONE = 'America/Los_Angeles'
@@ -38,7 +38,7 @@ DEFAULT_PAGINATION = 5
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-MENUITEMS =(('Home', SITEURL),)
+#MENUITEMS =(('Home', SITEURL),)
 #         ('Map', 'map.html'),
 #         ('About', 'about.html'),)
          
@@ -50,7 +50,6 @@ DEFAULT_DATE_FORMAT = '%a %B %d, %Y'
 GOOGLE_ANALYTICS = 'UA-56109557-2'
 
 PLUGIN_PATHS = ['pelican-plugins']
-#PLUGINS = ['pelican_dynamic']
 HEADER_URL = SITEURL + '/images/header_logo.jpg'
 USER_LOGO_URL = SITEURL + '/images/logo.jpg'
 DISQUS_SITENAME = 'jbredbook'

@@ -2,6 +2,7 @@ Title: Henry Coe State Park
 Date: January 31, 2015 11:49 PM
 Category: Trip
 Header: https://lh5.googleusercontent.com/-6SW9DG6pRr0/VMWAU7YQyxI/AAAAAAAACzc/RiW4sdSqxUo/w1138-h842-no/IMG_20150124_171158.jpg
+Mile: 25
 
 Lorem ipsum dolor sit amet, aenean viverra quis urna rutrum dictumst, nunc nec aliquet dictum sollicitudin fringilla convallis, rutrum vitae egestas placerat eros ante, felis dolor. Neque accumsan tincidunt mauris tincidunt, pede nam nec, laoreet leo aliquam dis, taciti risus ut luctus. Consectetuer arcu aenean justo, et quis sed, risus rutrum dignissim, ut pretium elit, urna lorem. Lacus pellentesque, sed magna, cras urna magna lectus vitae adipiscing augue, elit pharetra commodo sit lacus pulvinar. Massa mauris eu vehicula diam tristique.
 

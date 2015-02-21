@@ -15,7 +15,7 @@ USER_LOGO_URL = SITEURL + '/images/logo.jpg'
 HEADER_URL = SITEURL + '/images/header_logo.jpg'
 RELATIVE_URLS = False
 
-MENUITEMS =(('Home', SITEURL),)
+#MENUITEMS =(('Home', SITEURL),)
 
 #FEED_ALL_ATOM = 'feeds/all.atom.xml'
 FEED_ALL_RSS = 'feeds/all.rss.xml'
@@ -28,7 +28,7 @@ DELETE_OUTPUT_DIRECTORY = True
 DISQUS_SITENAME = "jbredbook"
 GOOGLE_ANALYTICS = "UA-56109557-2"
 
-SOCIAL = (('twitter', 'https://twitter.com/barrywainstock'),
-          ('instagram', 'https://instagram.com/bwainstock'),
-          ('facebook', 'https://www.facebook.com/barrywainstock'),
-          ('rss', SITEURL + FEED_ALL_RSS,),)
+SOCIAL = (('Twitter', 'https://twitter.com/barrywainstock'),
+          ('Instagram', 'https://instagram.com/bwainstock'),
+          ('Facebook', 'https://www.facebook.com/barrywainstock'),
+          ('RSS', SITEURL + FEED_ALL_RSS,),)

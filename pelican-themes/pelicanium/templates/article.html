@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% block title %}{{ article.title|striptags }}{% endblock %}
-{% block banner %}{% endblock %}
+
 {% block content_wrapper %}
 
-<section class="wrapper wrapper-post">
+<!-- <section class="wrapper wrapper-post"> -->
+<section class="wrapper">
   <div class="wrapper-container">
     <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post {#{post_class}#}">
       {% set author_bibliography = article.author %}
@@ -16,7 +17,7 @@
           {#{! A subtitle not available in Ghosts yet }#}
           <!--h2 itemprop="about" class="post-subtitle"></h2-->
         </header>
-        <aside class="post-side">
+<!--         <aside class="post-side">
           <div class="post-author">
             {% if author_bibliography.cover_image %}
               <a href="{{ SITEURL }}/{{ article.author.url }}" class="post-author-avatar">
@@ -30,7 +31,7 @@
               <p class="post-author-bio">{{ author_bibliography.summary }}</p>
             </div>
           </div>
-        </aside>
+        </aside> -->
         <div itemprop="articleBody" class="post-body">
           {{ article.content }}
         </div>
@@ -85,10 +86,11 @@
         </footer>
       </section>
 
+    {% include 'neighbors.html' %}
     {% include 'disqus.html' %}
 
     </article>
-
+    
     {% include 'footer.html' %}
 
   </div>

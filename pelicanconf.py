@@ -51,6 +51,8 @@ DEFAULT_DATE_FORMAT = '%a %B %d, %Y'
 GOOGLE_ANALYTICS = 'UA-56109557-2'
 
 PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = ['neighbors']
+
 HEADER_URL = SITEURL + '/images/header_logo.jpg'
 USER_LOGO_URL = SITEURL + '/images/logo.jpg'
 COVER_IMG = '/images/cover.jpg'

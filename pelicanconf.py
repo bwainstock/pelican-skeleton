@@ -34,7 +34,7 @@ SOCIAL = (('twitter', 'https://twitter.com/barrywainstock'),
 #          ('github', 'https://github.com/bwainstock/'),)
 
 DEFAULT_PAGINATION = 5
-
+PAGINATED_DIRECT_TEMPLATES = ['index', 'archives']
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
@@ -52,6 +52,7 @@ GOOGLE_ANALYTICS = 'UA-56109557-2'
 PLUGIN_PATHS = ['pelican-plugins']
 HEADER_URL = SITEURL + '/images/header_logo.jpg'
 USER_LOGO_URL = SITEURL + '/images/logo.jpg'
+COVER_IMG = '/images/cover.jpg'
 DISQUS_SITENAME = 'jbredbook'
 
 INSTAGRAM_ID = 361018940

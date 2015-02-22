@@ -1,12 +1,16 @@
 {% extends "base.html" %}
 
-{% block head %}
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+{% block head_extra %}
   <meta property="og:image" content="route.png" />
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
   <style>
-    #map { margin: 0; height: 400px; background: #fff; }
+    html, body, #map { margin: 0; height: 100%; background: #fff; }
+    .wrapper-container {
+      height: 100%;
+      padding: 0px;
+      margin: 0px;
+      max-width: 100%;
+    }
     .leaflet-marker-live {
       -webkit-animation: pulse 2s ease-out;
       animation: pulse 2s ease-out;
@@ -27,9 +31,9 @@
 {% block title %}{{ page.title }}{% endblock %}
 
 {% block content %}
-
-    {{ page.content }}
-
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+{{ page.content }}
+  
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
   <script src="{{ SITEURL }}/theme/js/reqwest.min.js"></script>
   <script src="{{ SITEURL }}/theme/js/Leaflet.MakiMarkers.js"></script>
@@ -77,24 +81,6 @@
       hours: t.getHours(),
       minutes: ('0' + t.getMinutes()).slice(-2)
     });
-  }
-  function getWeather (message) {
-    if (message.weather_symbol) {
-      console.log(message.weather_symbol);
-      return L.Util.template('<p><img src="http://api.yr.no/weatherapi/weathericon/1.1/?symbol={weather_symbol};content_type=image/png" width="38" height="38" style="float:left;margin:-5px 5px 10px -5px;">{temperature}°C - {precipitation} mm<br>{wind},<br>{wind_speed} m/s fra {direction}</p><p>Værdata fra <a href="http://api.yr.no">api.yr.no</a></p>', L.extend(message, {
-          direction: { 
-            'N':  'nord', 
-            'NE': 'nordøst', 
-            'E':  'øst', 
-            'SE': 'sørøst',
-            'S':  'sør', 
-            'SW': 'sørvest',
-            'W':  'vest',
-            'NW': 'nordvest' 
-          }[message.wind_direction]
-        }));
-    }
-    return '';
   }
   </script>
 

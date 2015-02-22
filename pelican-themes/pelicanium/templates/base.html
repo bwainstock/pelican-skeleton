@@ -32,7 +32,6 @@
     <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400&subset=latin,latin-ext" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/main.css" />
-    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/pygment.css" />
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/custom.css" />
 
 
@@ -42,6 +41,9 @@
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/imageLoader.js"></script>
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/drawer.js"></script>
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/scripts.js"></script>
+
+    {% block head_extra %}
+    {% endblock %}
 
 
     {% if FEED_ALL_ATOM %}
@@ -53,7 +55,7 @@
 
     {#{ ghost_head }#}
   </head>
-  <body class="{{body_class}}">
+  <body>
 
     {#{> drawer this}#}
 

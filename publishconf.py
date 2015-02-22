@@ -12,6 +12,7 @@ from pelicanconf import *
 
 SITEURL = '/pelican-skeleton/'
 USER_LOGO_URL = SITEURL + '/images/logo.jpg'
+COVER_IMG = '/images/cover.jpg'
 HEADER_URL = SITEURL + '/images/header_logo.jpg'
 RELATIVE_URLS = False
 

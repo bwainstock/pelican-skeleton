@@ -26,7 +26,6 @@
     <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400&subset=latin,latin-ext" rel="stylesheet">
 
     <link rel="stylesheet" href="/pelican-skeleton/theme/css/main.css" />
-    <link rel="stylesheet" href="/pelican-skeleton/theme/css/pygment.css" />
     <link rel="stylesheet" href="/pelican-skeleton/theme/css/custom.css" />
 
 
@@ -37,11 +36,37 @@
     <script src="/pelican-skeleton/theme/js/drawer.js"></script>
     <script src="/pelican-skeleton/theme/js/scripts.js"></script>
 
+  <meta property="og:image" content="route.png" />
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+  <style>
+    html, body, #map { margin: 0; height: 100%; background: #fff; }
+    .wrapper-container {
+      height: 100%;
+      padding: 0px;
+      margin: 0px;
+      max-width: 100%;
+    }
+    .leaflet-marker-live {
+      -webkit-animation: pulse 2s ease-out;
+      animation: pulse 2s ease-out;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+    }
+    @-webkit-keyframes pulse {
+      from { stroke-width: 15; stroke-opacity: 1; }
+      to { stroke-width: 50; stroke-opacity: 0; }
+    }
+    @keyframes pulse {
+      from { stroke-width: 15; stroke-opacity: 1; }
+      to { stroke-width: 50; stroke-opacity: 0; }
+    }
+  </style>
+
 
         <link href="/pelican-skeleton/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Barry Hikes The PCT RSS Feed" />
 
   </head>
-  <body class="">
+  <body>
 
 
     <button class="drawer-button" id="drawer-button" data-action="open-drawer"><i class="fa fa-bars"></i></button>
@@ -126,9 +151,9 @@
 
               <section class="wrapper" tabindex="0">
                 <div class="wrapper-container">
-
-    <div id="map"></div>
-
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<div id="map"></div>
+  
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
   <script src="/pelican-skeleton/theme/js/reqwest.min.js"></script>
   <script src="/pelican-skeleton/theme/js/Leaflet.MakiMarkers.js"></script>
@@ -176,24 +201,6 @@
       hours: t.getHours(),
       minutes: ('0' + t.getMinutes()).slice(-2)
     });
-  }
-  function getWeather (message) {
-    if (message.weather_symbol) {
-      console.log(message.weather_symbol);
-      return L.Util.template('<p><img src="http://api.yr.no/weatherapi/weathericon/1.1/?symbol={weather_symbol};content_type=image/png" width="38" height="38" style="float:left;margin:-5px 5px 10px -5px;">{temperature}°C - {precipitation} mm<br>{wind},<br>{wind_speed} m/s fra {direction}</p><p>Værdata fra <a href="http://api.yr.no">api.yr.no</a></p>', L.extend(message, {
-          direction: { 
-            'N':  'nord', 
-            'NE': 'nordøst', 
-            'E':  'øst', 
-            'SE': 'sørøst',
-            'S':  'sør', 
-            'SW': 'sørvest',
-            'W':  'vest',
-            'NW': 'nordvest' 
-          }[message.wind_direction]
-        }));
-    }
-    return '';
   }
   </script>
 

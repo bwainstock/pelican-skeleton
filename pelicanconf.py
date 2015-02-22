@@ -33,8 +33,9 @@ SOCIAL = (('twitter', 'https://twitter.com/barrywainstock'),
           ('facebook', 'https://www.facebook.com/barrywainstock'),)
 #          ('github', 'https://github.com/bwainstock/'),)
 
-DEFAULT_PAGINATION = 5
-PAGINATED_DIRECT_TEMPLATES = ['index', 'archives']
+#DEFAULT_PAGINATION = 5
+#PAGINATED_DIRECT_TEMPLATES = ['index', 'archives']
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 

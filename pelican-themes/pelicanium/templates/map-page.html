@@ -11,6 +11,13 @@
       margin: 0px;
       max-width: 100%;
     }
+
+    @media only screen and (max-width:1023px) {
+
+     .wrapper-container, #map {
+        height: 500px;
+      }
+    }
     .leaflet-marker-live {
       -webkit-animation: pulse 2s ease-out;
       animation: pulse 2s ease-out;
@@ -40,7 +47,7 @@
   <script src="{{ SITEURL }}/theme/js/Leaflet.SpotTracker.js"></script>
   <script>
   var feed = decodeURI((RegExp('feed=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]);
-  var map = L.map('map').setView([45.5, -122.4], 7);
+  var map = L.map('map', { zoomControl: false }).setView([45.5, -122.4], 7);
     
   L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png', {
   }).addTo(map);
@@ -66,6 +73,9 @@
       'CUSTOM': 10
     }
   }).addTo(map);
+
+  new L.Control.Zoom({ position: 'topright' }).addTo(map);
+
   function getPlace (message) {
     if (message.placename) {
       return L.Util.template('<p><strong>{placename}</strong><br>{terrain} {altitude} moh.</p>', message);

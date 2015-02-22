@@ -6,6 +6,7 @@ CHANGELOG:
 - 022115
     - Changed theme to Pelicanium
       - Basics of site work.  Map (+mobile), About (+m), Gear (+m), and blog.
+    - Added previous and next article to article.html
 - 021615
     - Switched column order
 

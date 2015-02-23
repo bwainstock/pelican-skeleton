@@ -1,0 +1,29 @@
+<div class="neighbors">
+  
+    <div class="prev-article">
+      <h4 class="neighbors-heading">Older Article</h4>
+      
+      {% if article.prev_article %}
+      <a href="{{ SITEURL }}/{{ article.prev_article.url}}" itemprop="url" class="neighbors-title">
+         {{ article.prev_article.title }}
+      </a>
+      {% else %}
+      <span class="neighbor-title">This is the first post!</span>
+      {% endif %}
+
+    </div>
+  
+  
+  <div class="next-article">
+    <h4 class="neighbors-heading">Newer Article</h4>
+    
+    {% if article.next_article %}    
+    <a href="{{ SITEURL }}/{{ article.next_article.url}}" itemprop="url" class="neighbors-title">
+        {{ article.next_article.title }}
+    </a>    
+    {% else %}
+    <span class="neighbors-title">Give me time, I'm hiking.</span>
+    {% endif %}    
+  </div>
+
+</div>

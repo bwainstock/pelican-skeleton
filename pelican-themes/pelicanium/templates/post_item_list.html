@@ -4,11 +4,13 @@
       {{ article.locale_date }}
     </time>
   </li>
+  {% if article.tags %}
   <li class="post-meta-item">
     {% for tag in article.tags %}
       <span itemprop="keywords"><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></span>
     {% endfor %}
   </li>
+  {% endif %}
 
   {% if DISQUS_SITENAME %}
     <li class="post-meta-item">

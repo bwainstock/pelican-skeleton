@@ -175,7 +175,7 @@
     
   L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png', {
   }).addTo(map);
-  L.spotTracker(feed, {
+  var spot = L.spotTracker(feed, {
     api: 'http://bwainstock.cartodb.com/api/v2/sql',
     url: "{api}?q=SELECT * FROM test ORDER BY unixtime",
     liveUrl: "{api}?q=SELECT * FROM pct_spot WHERE unixtime > {timestamp} ORDER BY unixtime",
@@ -206,12 +206,6 @@
 
   new L.Control.Zoom({ position: 'topright' }).addTo(map);
 
-  function getPlace (message) {
-    if (message.placename) {
-      return L.Util.template('<p><strong>{placename}</strong><br>{terrain} {altitude} moh.</p>', message);
-    }
-    return '';
-  }
   function getTime (timestamp) {
     var t = new Date(timestamp * 1000);
     return L.Util.template('<p>{month} {date}, {year} {hours}:{minutes}</p>', {

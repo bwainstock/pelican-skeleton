@@ -198,8 +198,11 @@
     }
   }).addTo(map);
 
-  //L.instagram.cluster('https://api.instagram.com/v1/users/361018940/media/recent/?access_token=361018940.467ede5.ab481cfcaafd4454a1ea333429e3d3c7&min_timestamp=1392502386').addTo(map);
-  L.instagram.cluster('https://api.instagram.com/v1/users/361018940/media/recent/?access_token=361018940.467ede5.ab481cfcaafd4454a1ea333429e3d3c7').addTo(map);
+  var insta = L.instagram.cluster('https://api.instagram.com/v1/users/361018940/media/recent/?access_token=361018940.467ede5.ab481cfcaafd4454a1ea333429e3d3c7');
+
+  var InstagramLayer = { "Photos": insta };
+
+  new L.control.layers(null, InstagramLayer, { collapsed: false }).addTo(map);
 
   new L.Control.Zoom({ position: 'topright' }).addTo(map);
 

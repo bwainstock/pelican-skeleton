@@ -39,12 +39,16 @@
 
 {% block content %}
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/MarkerCluster.css" />
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/Leaflet.Instagram.css" />
 {{ page.content }}
   
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
   <script src="{{ SITEURL }}/theme/js/reqwest.min.js"></script>
   <script src="{{ SITEURL }}/theme/js/Leaflet.MakiMarkers.js"></script>
   <script src="{{ SITEURL }}/theme/js/Leaflet.SpotTracker.js"></script>
+  <script src="{{ SITEURL }}/theme/js/leaflet.markercluster.js"></script>
+  <script src="{{ SITEURL }}/theme/js/Leaflet.Instagram.Cluster.js"></script>
   <script>
   var feed = decodeURI((RegExp('feed=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]);
   var map = L.map('map', { zoomControl: false }).setView([45.5, -122.4], 7);
@@ -73,6 +77,12 @@
       'CUSTOM': 10
     }
   }).addTo(map);
+
+  var insta = L.instagram.cluster('https://api.instagram.com/v1/users/361018940/media/recent/?access_token=361018940.467ede5.ab481cfcaafd4454a1ea333429e3d3c7');
+
+  var InstagramLayer = { "Photos": insta };
+
+  new L.control.layers(null, InstagramLayer, { collapsed: false }).addTo(map);
 
   new L.Control.Zoom({ position: 'topright' }).addTo(map);
 

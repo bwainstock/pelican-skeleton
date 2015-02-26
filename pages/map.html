@@ -175,6 +175,7 @@
     
   L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png', {
   }).addTo(map);
+
   var spot = L.spotTracker(feed, {
     api: 'http://bwainstock.cartodb.com/api/v2/sql',
     url: "{api}?q=SELECT * FROM test ORDER BY unixtime",
@@ -198,9 +199,9 @@
     }
   }).addTo(map);
 
-  var insta = L.instagram.cluster('https://api.instagram.com/v1/users/361018940/media/recent/?access_token=361018940.467ede5.ab481cfcaafd4454a1ea333429e3d3c7');
+  var insta = L.instagram('https://api.instagram.com/v1/users/361018940/media/recent/?access_token=361018940.467ede5.ab481cfcaafd4454a1ea333429e3d3c7');
 
-  var InstagramLayer = { "Photos": insta };
+  var InstagramLayer = {"<span class='fa fa-instagram'></span>": insta };
 
   new L.control.layers(null, InstagramLayer, { collapsed: false }).addTo(map);
 

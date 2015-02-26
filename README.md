@@ -3,6 +3,8 @@ Pelican-Skeleton
 
 CHANGELOG:
 ---
+- 022415
+	- Added Instagram photo layer to map
 - 022115
     - Changed theme to Pelicanium
       - Basics of site work.  Map (+mobile), About (+m), Gear (+m), and blog.
@@ -10,27 +12,32 @@ CHANGELOG:
 - 021615
     - Switched column order
 
+POST IDEAS:
+---
+- Intro
+	- Basic path overview of trail with highlights
+	  - Campo through San Jacinto and Mojave, Sierras, NorCal, OR, WA
+	  - Crater Lake
+	  - Whitney
+- Gear
+	- Big three
+	- Full breakdown
+- Food
+- 
 TODO:
 -----
 - ~~Figure out instagram images~~
 	- Decided not to use this
 - Basic footer implemented
-	- ~~Style and more info~~
 - Map
 	- Maki icons for different SPOT checkins
-	- Instagram integration (?)
 - Menu
 	- Latest Posts
 	- Other ideas?
 - About me page
-- ~~About the website page~~
-	- ~~Technologies used~~
-- ~~Change font and size for titles and bodies~~
-	- ~~Roboto is nice, look through google fonts~~
 
 Style:
 ---
-- ~~Switched to Skeleton CSS framework~~
 - ~~Look at skeleton.css for style changes~~
 	- Fonts still need work
 	- Posts layout

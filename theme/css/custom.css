@@ -127,3 +127,19 @@ div .highlight, pre, span {
     font-size: 15px;
     font-weight: 700;
 }
+
+/* Post Images */
+
+.post-image {
+  border: 2px solid #f0f0f0;
+  padding: 10px;
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.image-caption {
+  font-size: 75%;
+  color: #777;
+  margin: 0;
+  padding: 0 4px 5px;
+}

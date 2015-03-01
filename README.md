@@ -3,6 +3,9 @@ Pelican-Skeleton
 
 CHANGELOG:
 ---
+- 022815
+	- Added lightbox.js photo gallery to site
+	- Removed filler posts and added Intro and About the PCT
 - 022415
 	- Added Instagram photo layer to map
 - 022115

@@ -169,7 +169,7 @@ body:after {
 .lb-data .lb-details {
   width: 85%;
   float: left;
-  text-align: right;
+  text-align: left;
   line-height: 1.1em;
 }
 

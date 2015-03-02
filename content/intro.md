@@ -6,7 +6,7 @@ I quit my job yesterday so I could hike the Pacific Crest Trail, which runs over
 My plan is to leave Campo on April 21 and hike my way through what can be considered five major sections: **Southern California**, **the Sierras**, **Northern California**, **Oregon**, and **Washington**. After the first 45 days and 700 miles and right as we come upon the Sierras, I'll leave the trail for a week for a friend's wedding.  Then, from around the middle of June straight through to the end of September, it'll be back to living out of a backpack stuffed with everything I could need.
 
 <div class="post-image">
-    <a href="/images/pct-overview.png" data-lightbox="image-1" data-title="My caption">
+    <a href="/images/pct-overview.png" data-lightbox="image-1" data-title="Map by Halfmile">
         <img src="/images/pct-overview.png">
     </a>
     <div class="image-caption">

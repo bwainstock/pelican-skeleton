@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Barry Hikes The PCT</title><link>http://www.barryhikesthepct.com/</link><description></description><atom:link href="http://www.barryhikesthepct.com/feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 01 Mar 2015 00:00:00 -0800</lastBuildDate><item><title>Gear Breakdown</title><link>http://www.barryhikesthepct.com/gear-breakdown.html</link><description>&lt;p&gt;Living out of a backpack for five months takes some very careful planning.  Everything that you carry on your back should have a purpose, maybe even two or three.  The idea is to keep weight to a minimum while trying to stay comfortable and safe.  I've made a few weight concessions in order to keep my comfort level higher.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Barry Hikes The PCT</title><link href="http://www.barryhikesthepct.com/" rel="alternate"></link><link href="http://www.barryhikesthepct.com/feeds/gear.atom.xml" rel="self"></link><id>http://www.barryhikesthepct.com/</id><updated>2015-03-01T00:00:00-08:00</updated><entry><title>Gear Breakdown</title><link href="http://www.barryhikesthepct.com/gear-breakdown.html" rel="alternate"></link><updated>2015-03-01T00:00:00-08:00</updated><author><name>Barry Wainstock</name></author><id>tag:www.barryhikesthepct.com,2015-03-01:gear-breakdown.html</id><summary type="html">&lt;p&gt;Living out of a backpack for five months takes some very careful planning.  Everything that you carry on your back should have a purpose, maybe even two or three.  The idea is to keep weight to a minimum while trying to stay comfortable and safe.  I've made a few weight concessions in order to keep my comfort level higher.&lt;/p&gt;
 &lt;p&gt;If you're looking for just a list with weights, check out my &lt;a href="http://www.barryhikesthepct.com/pages/gear.html"&gt;gear list&lt;/a&gt;.  If you have any questions about anything you do or don't see here, please leave me a comment.&lt;/p&gt;
 &lt;div class="post-image"&gt;
     &lt;a href="https://lh6.googleusercontent.com/-EHd2CSbT1RY/VPOvQoOeeCI/AAAAAAAADGM/BzpXMUTnlc0/w623-h842-no/IMG_20150301_163034.jpg" data-lightbox="big-three" data-title="All packed up."&gt;
@@ -151,39 +151,4 @@ Most hikers aren't eating gourmet meals on the trail everynight.  Breakfast is t
     &lt;div class="image-caption"&gt;
         Cold Weather Gear
     &lt;/div&gt;
-&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Barry Wainstock</dc:creator><pubDate>Sun, 01 Mar 2015 00:00:00 -0800</pubDate><guid>tag:www.barryhikesthepct.com,2015-03-01:gear-breakdown.html</guid></item><item><title>The Pacific Crest Trail</title><link>http://www.barryhikesthepct.com/the-pacific-crest-trail.html</link><description>&lt;p&gt;The Pacific Crest Trail was officially completed in 1993.  The trail crosses over 57 major mountain passes, dips into 19 major canyons, and ambles past more than 1,000 lakes.  Over it's 2,650 miles, the PCT passes through four national monuments, five state park units, six national parks, seven BLM field offices, 25 national forest units and 48 federal wilderness areas.&lt;/p&gt;
-&lt;p&gt;The trail starts out in the Colorado and Mojave deserts and then mainly follows the Sierra Nevada and Cascade mountain ranges.  After passing through the deserts of Southern California the PCT quickly climbs into the High Sierra.  Many people say that this is their favorite part of the trail and it's not surprising why.  After enduring up to 30 mile stretches without reliable water sources in the desert, snow covered mountains become plentiful, and with them snowmelt.&lt;/p&gt;
-&lt;p&gt;On top of the much improved water situation, the trail weaves past countless crystal blue mountain lakes and even detours up to the highest point in the lower 48 states, Mt. Whitney at 14,494 feet.  Once back down from Mt. Whitney, the trail crosses eight named passes above 11,000 feet, starting with the official highest point on the trail at 13,153 feet, Forester Pass.  The Sierra Nevada ends as the trail passes through Yosemite and Lake Tahoe and the Cascades begin.  Granite gives way to volcanic rock when Mt. Lassen comes into view after which the PCT turns west toward Mt. Shasta and through the Trinity Alps.  California finally comes to an end at Interstate 5 near Siskiyou Summit and the trail enters Oregon.&lt;/p&gt;
-&lt;p&gt;After California's brutal desert and Sierra peaks, Oregon brings both the shortest and the easiest portion to hike.  Passing Ashland to the west, the trail runs directly along the Rim of Crater Lake, then past Bend, the Three Sisters and Mt. Hood near Portland.  The only major elevation change in Oregon is the 3,160 foot drop into the Columbia River Gorge crossing the Columbia River on the awesomely named Bridge of the Gods into Washington.&lt;/p&gt;
-&lt;p&gt;Just as the trail descends into the Gorge, it climbs right back out in Washington and rounds the base of Mt. Adams.  The terrain turns glacial as Mt. Rainier towers in the distance and the trail enters the North Cascades.  Once through Snoqualmie Pass, the PCT climbs up a deep canyon to a high mountain pass, only to descend another deep canyon and repeat the cycle.  Spotted throughout the alpine land are small towns such as Skykomish and Stehekin.  In this section, it's not uncommon to walk 75 miles without seeing a road or another person without stopping into town.  Wrapping up the adventure, the Pacific Crest Trail passes around Glacier Peak and over the Canadian border into Manning Provincial Park.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Barry Wainstock</dc:creator><pubDate>Sat, 28 Feb 2015 00:00:00 -0800</pubDate><guid>tag:www.barryhikesthepct.com,2015-02-28:the-pacific-crest-trail.html</guid></item><item><title>I quit my job yesterday.</title><link>http://www.barryhikesthepct.com/i-quit-my-job-yesterday.html</link><description>&lt;p&gt;I quit my job yesterday so I could hike the Pacific Crest Trail, which runs over 2,600 miles and connects the Mexican border in Campo, CA to the Canadian border just inside British Columbia, Canada.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;My plan is to leave Campo on April 21 and hike my way through what can be considered five major sections: &lt;strong&gt;Southern California&lt;/strong&gt;, &lt;strong&gt;the Sierras&lt;/strong&gt;, &lt;strong&gt;Northern California&lt;/strong&gt;, &lt;strong&gt;Oregon&lt;/strong&gt;, and &lt;strong&gt;Washington&lt;/strong&gt;. After the first 45 days and 700 miles and right as we come upon the Sierras, I'll leave the trail for a week for a friend's wedding.  Then, from around the middle of June straight through to the end of September, it'll be back to living out of a backpack stuffed with everything I could need.&lt;/p&gt;
-&lt;div class="post-image"&gt;
-    &lt;a href="/images/pct-overview.png" data-lightbox="image-1" data-title="Map by Halfmile"&gt;
-        &lt;img src="/images/pct-overview.png"&gt;
-    &lt;/a&gt;
-    &lt;div class="image-caption"&gt;
-        Map created by &lt;a href="http://www.pctmap.net/" target="_blank"&gt;Halfmile&lt;/a&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h3&gt;Some Pacific Crest Trail Facts&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Location: California / Oregon / Washington, USA / British Columbia, Canada&lt;/li&gt;
-&lt;li&gt;Length: 2,663 mi (4,286 km)&lt;/li&gt;
-&lt;li&gt;Time Zone: PST (UTC-8)&lt;/li&gt;
-&lt;li&gt;Southern Terminus: Campo, California&lt;/li&gt;
-&lt;li&gt;Northern Terminus: Manning Park, British Columbia&lt;/li&gt;
-&lt;li&gt;Highest Point: Forester Pass, 13,153 ft (4,009 m)&lt;/li&gt;
-&lt;li&gt;Lowest Point: Cascade Locks, 140 ft (43 m)&lt;/li&gt;
-&lt;li&gt;Elevation Change: 420,880 ft (128,284 m)&lt;/li&gt;
-&lt;li&gt;Use: Pedestrian &amp;amp; Equestrian&lt;/li&gt;
-&lt;li&gt;Drinking Tap Water: At your own discretion&lt;/li&gt;
-&lt;li&gt;Other water: Filter it!&lt;/li&gt;
-&lt;li&gt;Toilet Paper: Pack it out!  Never Bury it!&lt;/li&gt;
-&lt;li&gt;Average Days On-Trail: 140-170&lt;/li&gt;
-&lt;li&gt;Typical Cost: $1 – $2 per mile.  ($2500-$5000+, not counting equipment)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Writing on this site is extremely helpful to organize a trip like this.  All of the posts I make are just as much help to me as they are interesting for others to read.  I hope to post here as often as possible on the trail.  Internet service is understandably unreliable in the middle of the wilderness.&lt;/p&gt;
-&lt;p&gt;A bit more about the trail can be found &lt;a href="http://www.barryhikesthepct.com/the-pacific-crest-trail.html"&gt;here&lt;/a&gt;.  Living out of a backpack for five months requires some specialty gear which you can read &lt;a href="http://www.barryhikesthepct.com/gear-breakdown.html"&gt;about here&lt;/a&gt;.  I'll be carrying a GPS device which should update &lt;a href="http://www.barryhikesthepct.com/pages/map.html"&gt;this map&lt;/a&gt; in real time, so be sure to check back often.&lt;/p&gt;
-&lt;h5&gt;Thanks for reading and please comment.  It's nice to know someone is reading this.&lt;/h5&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Barry Wainstock</dc:creator><pubDate>Fri, 27 Feb 2015 00:00:00 -0800</pubDate><guid>tag:www.barryhikesthepct.com,2015-02-27:i-quit-my-job-yesterday.html</guid></item></channel></rss>
+&lt;/div&gt;</summary></entry></feed>

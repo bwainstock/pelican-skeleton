@@ -1,5 +1,6 @@
 Title: The Pacific Crest Trail
 Date: February 28, 2015
+Category: Intro
 
 The Pacific Crest Trail was officially completed in 1993.  The trail crosses over 57 major mountain passes, dips into 19 major canyons, and ambles past more than 1,000 lakes.  Over it's 2,650 miles, the PCT passes through four national monuments, five state park units, six national parks, seven BLM field offices, 25 national forest units and 48 federal wilderness areas.
 

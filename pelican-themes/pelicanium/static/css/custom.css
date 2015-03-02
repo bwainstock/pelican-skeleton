@@ -130,11 +130,19 @@ div .highlight, pre, span {
 
 /* Post Images */
 
+.gallery {
+  display: flex;
+}
 .post-image {
-  border: 2px solid #f0f0f0;
+  /*border: 2px solid #f0f0f0;*/
+  border-radius: 22px;
   padding: 10px;
   text-align: center;
   margin-bottom: 30px;
+}
+
+.post-image img {
+  border-radius: 11px;
 }
 
 .image-caption {

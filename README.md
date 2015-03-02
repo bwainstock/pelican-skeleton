@@ -3,6 +3,8 @@ Pelican-Skeleton
 
 CHANGELOG:
 ---
+- 030115
+	- Changed article to single column layout
 - 022815
 	- Added lightbox.js photo gallery to site
 	- Removed filler posts and added Intro and About the PCT

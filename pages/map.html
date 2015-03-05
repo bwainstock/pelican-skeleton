@@ -174,8 +174,10 @@
   <script>
   var feed = decodeURI((RegExp('feed=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]);
   var map = L.map('map', { zoomControl: false }).setView([45.5, -122.4], 7);
-    
+  var attrib = 'Maps © <a href="http://www.thunderforest.com">Thunderforest</a>, Data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>';
+  
   L.tileLayer('http://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png', {
+    attribution: attrib,
   }).addTo(map);
 
   var spot = L.spotTracker(feed, {

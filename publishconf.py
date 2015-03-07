@@ -11,7 +11,7 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 #SITEURL = '/pelican-skeleton/'
-SITEURL = 'http://www.barryhikesthepct.com/'
+SITEURL = 'http://www.barryhikesthepct.com'
 USER_LOGO_URL = SITEURL + '/images/logo.jpg'
 COVER_IMG = 'images/cover.jpg'
 HEADER_URL = SITEURL + 'images/header_logo.jpg'

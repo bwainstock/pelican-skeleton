@@ -1,5 +1,6 @@
 VIRTUAL/
 output/
+s3_output/
 cache/
 *.pyc
 *.swp

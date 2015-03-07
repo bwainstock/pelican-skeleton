@@ -5,6 +5,7 @@ PELICANOPTS=
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
+S3_PUBLICATION_DIR=$(BASEDIR)/s3_output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
@@ -17,7 +18,7 @@ SSH_PORT=22
 SSH_USER=root
 SSH_TARGET_DIR=/var/www
 
-S3_BUCKET=my_s3_bucket
+S3_BUCKET=barryhikesthepct.com
 
 CLOUDFILES_USERNAME=my_rackspace_username
 CLOUDFILES_API_KEY=my_rackspace_api_key
@@ -106,5 +107,27 @@ cf_upload: publish
 github: publish
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	git push origin $(GITHUB_PAGES_BRANCH)
+
+compress:
+	python tools/aws-s3-gzip-compression.py $(OUTPUTDIR) $(S3_PUBLICATION_DIR)
+
+s3_gzip_upload: compress    
+	    s3cmd sync $(S3_PUBLICATION_DIR)/ s3://$(S3_BUCKET) --acl-public --add-header \
+      "Content-Encoding:gzip" --mime-type="application/javascript; charset=utf-8" \
+      --add-header "Cache-Control: max-age 86400" --exclude '*' --include '*.js' && \
+    s3cmd sync $(S3_PUBLICATION_DIR)/ s3://$(S3_BUCKET) --acl-public --add-header \
+      "Content-Encoding:gzip" --mime-type="text/css; charset=utf-8" --add-header \
+      "Cache-Control: max-age 86400" --exclude '*' --include '*.css' && \
+    s3cmd sync $(S3_PUBLICATION_DIR)/ s3://$(S3_BUCKET) --acl-public --add-header \
+      "Content-Encoding:gzip" --mime-type="text/html; charset=utf-8" --exclude '*' \
+      --include '*.html' && \
+    s3cmd sync $(S3_PUBLICATION_DIR)/ s3://$(S3_BUCKET) --acl-public --add-header \
+      "Content-Encoding:gzip" --mime-type="application/xml; charset=utf-8" --exclude \
+      '*' --include '*.xml'  && \
+    s3cmd sync $(S3_PUBLICATION_DIR)/static/ s3://$(S3_BUCKET)/static/ --acl-public \
+      --add-header "Cache-Control: max-age 86400" && \
+    s3cmd sync $(S3_PUBLICATION_DIR)/theme/ s3://$(S3_BUCKET)/theme/ --acl-public \
+      --add-header "Cache-Control: max-age 86400" && \
+    s3cmd sync $(S3_PUBLICATION_DIR)/ s3://$(S3_BUCKET) --acl-public --delete-removed
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github

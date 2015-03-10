@@ -2,8 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Barry Hikes The PCT</title><link href="http://bwainstock.github.io/pelican-skeleton/" rel="alternate"></link><link href="http://bwainstock.github.io/pelican-skeleton/feeds/training.atom.xml" rel="self"></link><id>http://bwainstock.github.io/pelican-skeleton/</id><updated>2015-03-07T00:00:00-08:00</updated><entry><title>Castle Rock State Park Training</title><link href="http://bwainstock.github.io/pelican-skeleton/castle-rock-state-park-training.html" rel="alternate"></link><updated>2015-03-07T00:00:00-08:00</updated><author><name>Barry Wainstock</name></author><id>tag:bwainstock.github.io,2015-03-07:pelican-skeleton/castle-rock-state-park-training.html</id><summary type="html">&lt;p&gt;Friday was my last day at work which means it's time to start my &lt;strong&gt;official&lt;/strong&gt; training.  A friend and I headed up to my favorite hiking spot in the area at Castle Rock State Park.  Our goal was to hike 10 miles with our packs loaded while keeping our pace in mind.  We'd like to be comfortable hiking around 2.5 miles per hour on the trail.&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;
 &lt;div class="post-image"&gt;
-    &lt;a href="/images/training-3-8.png" data-lightbox="training-crsp" data-title="Training hike map"&gt;
-        &lt;img src="/images/training-3-8.png"&gt;
+    &lt;a href="./images/training-3-8.png" data-lightbox="training-crsp" data-title="Training hike map"&gt;
+        &lt;img src="./images/training-3-8.png"&gt;
     &lt;/a&gt;
     &lt;div class="image-caption"&gt;
         Training hike map

@@ -33,7 +33,7 @@ GOOGLE_ANALYTICS = "UA-56109557-2"
 SOCIAL = (('Twitter', 'https://twitter.com/barrywainstock'),
           ('Instagram', 'https://instagram.com/bwainstock'),
           ('Facebook', 'https://www.facebook.com/barrywainstock'),
-          ('RSS', SITEURL + FEED_ALL_RSS,),)
+          ('RSS', SITEURL + '/' + FEED_ALL_RSS,),)
 
 STATIC_PATHS = ['images', 'extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}

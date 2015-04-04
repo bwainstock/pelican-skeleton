@@ -27,7 +27,7 @@ Algorithm:
 import os, sys, gzip, hashlib, shutil
 
 if len(sys.argv) != 3:
-    print 'Command should have 2 arguments: output dir and publication dir'
+    print('Command should have 2 arguments: output dir and publication dir')
     sys.exit(0)
     
 OUTPUT_DIR = sys.argv[1]
@@ -71,7 +71,7 @@ def update_gzipped_publications(output_dir, publication_dir):
                                 fw.write(buf)
                                 buf = fr.read(blocksize)
                     hashes[relpath] = current_hash
-                    print filename + ' renewed'
+                    print(filename, ' renewed')
             else:
                  publicated_file = os.path.join(publication_dir, relpath);
                  directory_of_file = os.path.dirname(publicated_file)

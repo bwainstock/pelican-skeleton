@@ -60,7 +60,8 @@
 
   var spot = L.spotTracker(feed, {
     api: 'http://bwainstock.cartodb.com/api/v2/sql',
-    url: "{api}?q=SELECT * FROM test ORDER BY unixtime",
+    url: "{api}?q=SELECT * FROM test WHERE feedid = '0hhvvy86u7pTm6F1UytYEAj2uhyXUOt1u' ORDER BY unixtime",
+    // url: "{api}?q=SELECT * FROM test WHERE unixtime >= 1426359202 ORDER BY unixtime",
     liveUrl: "{api}?q=SELECT * FROM pct_spot WHERE unixtime > {timestamp} ORDER BY unixtime",
     OK: {
       icon: L.MakiMarkers.icon({ icon: 'building',  color: '#145291', size: 'm' }),
@@ -88,6 +89,7 @@
   new L.control.layers(null, InstagramLayer, { collapsed: false }).addTo(map);
 
   new L.Control.Zoom({ position: 'topright' }).addTo(map);
+
 
   function getTime (timestamp) {
     var t = new Date(timestamp * 1000);
